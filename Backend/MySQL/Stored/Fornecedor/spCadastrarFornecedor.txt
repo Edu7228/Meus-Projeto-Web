@@ -1,1 +1,31 @@
+DELIMITER ;
+CREATE PROCEDURE `SPCadastrarFornecedor`(
+    IN paCodFornecedor INT,
+    IN paRazaoSocial VARCHAR(100),
+    IN paPaisOrigem VARCHAR(60)
+)
+BEGIN
 
+    -- Desfaz as instruções caso a transação dê erro.
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+        ROLLBACK;
+        SELECT 'ERRO' AS Retorno;
+    END;
+
+    -- Caso contrário executa a transação.
+    START TRANSACTION;
+
+        INSERT INTO Fornecedor
+        (CodFornecedor, RazaoSocial, PaisOrigem)
+
+        VALUES
+        (paCodFornecedor, paRazaoSocial, paPaisOrigem);
+
+    COMMIT;
+
+    -- Envia mensagem de sucesso.
+    SELECT 'SUCESSO' AS Retorno;
+
+END //
+DELIMITER //
