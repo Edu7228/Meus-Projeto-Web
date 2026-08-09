@@ -1,1 +1,66 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+}
 
+body {
+    background: linear-gradient(
+        to bottom,
+        blue 15%,
+        lightblue 75%,
+        white 100%
+    );
+}
+
+#Titulo {
+    font-family: Arial;
+    font-weight: bold;     
+    font-size: 48px;
+    text-align: center;
+}
+
+#Total {
+    display:flex;
+    flex-wrap: wrap; /* permite quebrar linha */
+    justify-content: center;
+    gap: 10px;
+}
+
+#FrmEndereco {
+    position: relative;
+    top: 140px;
+}
+
+.Frame {
+    background-color: lightgrey;
+}
+
+.Legenda {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 24px;
+    color: brown;
+
+}
+
+/* Todos os componentes com texto.*/
+.Componente {
+    font-family: Courier;
+    font-weight: bold;
+    font-size: 16px;
+    color: darkblue;
+}
+
+.Button {
+    font-family: 'Arial Black';
+    font-size: 18px;
+}
+
+/* Estilizando a textarea */
+#TxtComentario {
+    width: 300px;       /* largura */
+    height: 150px;      /* altura */
+    border: 2px solid #4CAF50; /* borda verde */
+    border-radius: 5px; /* cantos arredondados */
+    resize: none;       /* impede redimensionamento manual */
+}
