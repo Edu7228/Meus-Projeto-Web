@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Funcionário.</title>
+    <link rel="stylesheet" href="../css/Funcionario.css">
+
+</head>
+<body>
+    <h1 class="Titulo">Formulário do Funcionário.</h1>  
+    <br><br>
+
+<div class="Caixa">
+    <fieldset
+        class="Frame">
+        <legend class="Legenda">Dados do Funcionário.</legend>
+        
+        <br>
+        <label 
+            class="Componente">
+            Código do Funcionário.... 
+        </label>
+
+        <label 
+            class="Componente"
+            id="LblCodFuncionario">
+        </label>
+        <br><br>
+
+        <label
+            class="Componente">
+            Nome do Funcionário..... 
+        </label>
+
+        <input 
+            type="text"
+            class="Componente"
+            id="TxtNomeFuncionario">
+        <br>
+        
+        <label
+            class="Componente">
+            Cargo Funcionário....... 
+        </label>
+
+        <input 
+            type="text"
+            class="Componente"
+            id="TxtCargoFuncionario">
+        <br><br>
+
+    </fieldset>
+
+    <fieldset
+        class="Frame">
+        <legend class="Legenda">Caixa de Consulta.</legend>
+        <p id="ComponenteSelect">
+            Listar Funcionários.
+        </p>
+        <br>
+        <select
+            class="Componente"
+            id="LstFuncionario"> 
+        </select>
+    </fieldset>
+    <br><br>
+
+    <fieldset
+        class="Frame"
+        id="CaixaComando">
+        <legend class="Legenda">Caixa de Comandos.</legend>
+        <button
+            class="Button"
+            id="BtnNovoCadastro">
+            Novo Cadastro
+        </button>
+
+        <Button
+            class="Button"
+            id="BtnCadastrar">
+            Cadastrar.
+        </Button>
+
+        <button
+            class="Button"
+            id="BtnExcluir">
+            Excluir.
+        </button>
+        <br>
+
+        <button
+            class="Button"
+            id="BtnAtualizar">
+            Atualizar
+        </button>
+
+        <button
+            class="Button"
+            id="BtnAbrirEndereco">
+            Consultar Endereço.
+        </button>
+
+    </fieldset>
+    <br>
+    
+    <fieldset
+            class="Frame"
+            id="FrmEndereco">
+            <legend class="Legenda">Informações do Endereço.</legend>
+            <br>
+
+            <label
+                class="Componente">
+                Código do endereço........
+            </label>
+
+            <label
+                class="Componente"
+                id="LblCodEndereco">
+            </label>
+            <br>
+
+            <label 
+                class="Componente">
+                País Residente...........
+            </label>
+
+            <input 
+                type="text"
+                class="Componente"
+                id="TxtPaisResidente">
+            <br>
+
+            <label
+                class="Componente">
+                Estado...................
+            </label>
+
+            <input 
+                type="text"
+                class="Componente"
+                id="TxtEstado">
+            <br>
+            
+            <label
+                class="Componente">
+                Bairro...................
+            </label>
+
+            <input 
+                type="text"
+                class="Componente"
+                id="TxtBairro">
+            <br>
+            
+            <label 
+                class="Componente">
+                Rua......................
+            </label>
+
+            <input 
+                type="text"
+                class="Componente"
+                id="TxtRua">
+            <br>
+            
+            <label
+                class="Componente">
+                Número...................
+            </label>
+            
+            <input 
+                type="text"
+                class="Componente"
+                id="TxtNumero">
+            <br>
+
+            <label
+                class="Componente">
+                Complementos.............
+            </label>
+            
+            <input 
+                type="text"
+                class="Componente"
+                id="TxtComplemento">
+            <br><br>
+
+            <button
+                class="Button"
+                id="BtnCadastrarEndereco">
+                Cadastrar Endereço.
+            </button>
+
+            <button
+                class="Button"
+                id="BtnAtualizar">
+                Atualizar Endereço.
+            </button>
+            <br>
+
+            <button
+                class="Button"
+                id="BtnFechar">
+                Fechar a janela de Endereço.
+            </button>
+            <br>
+        </fieldset>
+</div>    
+</body>
+</html>
