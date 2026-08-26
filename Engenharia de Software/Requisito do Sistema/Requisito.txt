@@ -1,1 +1,39 @@
+História do Projeto – Gerenciador de Console e Jogos.
+
+1. Contextualização.
+    A empresa Edu Games, especializada na comercialização de consoles e jogos eletrônicos, iniciou suas atividades com um pequeno volume de produtos. No começo, o controle dos produtos, fornecedores, clientes, funcionários, estoque e vendas eram realizados manualmente, utilizando planilhas e anotações. Com o crescimento da empresa, a quantidade de consoles e jogos comercializados aumentou consideravelmente e começaram a surgir dificuldades para localizar informações sobre produtos, controlar as quantidades disponíveis em estoque, identificar fornecedores, consultar clientes e acompanhar as vendas realizadas. Diante dessa necessidade, a empresa decidiu desenvolver um sistema denominado Gerenciador de Console e Jogos, com o objetivo de centralizar e organizar todas essas informações.
+
+2. Funcionamento do sistema.
+    O sistema permitirá que os funcionários da empresa realizem o cadastro e gerenciamento dos fornecedores, clientes, funcionários, consoles, jogos, estoques e vendas. 
+Começando pelo fornecedor, cada fornecedor será identificado por um código e possuirá informações como Razão Social e país de origem. Os fornecedores também poderão possuir seus respectivos endereços.
+Os clientes serão cadastrados com código de identificação no sistema, um documento, nome completo e idade. O cadastro do cliente só será aceito com um documento com foto e endereço do mesmo em mão para validação dos dados. Se for de menor, terá que ser cadastrado por um adulto responsável. Não precisará cadastrar o documento com foto, nem o comprovante de endereço.
+Os funcionários responsáveis pelas atividades da empresa serão cadastrados com código, RE, nome e cargo, podendo igualmente possuir seus endereços cadastrados no sistema. 
+Cada funcionário, cliente e fornecedor, só poderão ter um endereço cadastrado e só serão registrado (Nação Origem, Estado, cidade, bairro, logradouro, número, CEP, Contato (Telefone, Celular, e-mail), complementos). OBS: Em contatos só poderá ter um (Telefone, Celular, e-mail) por registro, isso significa, por exemplo, que um cliente só poderá ter registrado 01 telefone, 01 celular e 01 e-mail, ou os três juntos, nunca 01 telefone, 03 celulares, 02 e-mails.
+OBS: Tanto o fornecedor, quanto o cliente e o funcionário, o código será atribuído pelo sistema. O sistema permitirá também, cadastro, consulta, exclusão e atualizações dos mesmos.
+
+3. Cadastro dos produtos.
+    A empresa comercializa dois tipos principais de produtos: consoles e jogos. No cadastro de um console e jogos serão armazenados seu código, fornecedor responsável, nome, Tipo produto, Exclusividade, valor de compra e valor de venda. OBS: Como o console e jogo será tratado como produto, em tipo do produto será(Console ou jogo), em exclusividade, quando for console e o jogo não é exclusivo por não, quando for exclusivo por sim e Tipo Box é para qual tipo de console pertence o jogo(Playstation(1,2,3,4,5), Microsoft(360, one, series), Nintendo ...) e quando for o console que estiver sendo cadastrado, o próprio sistema colocará o nome do console que está sendo cadastrado.
+
+4. Controle de estoque.
+    Após o cadastramento dos produtos, a empresa deverá controlar suas quantidades disponíveis. O estoque será identificado por um código e estará relacionado ao código do produto e à quantidade disponível. O controle do estoque será controlado pelo gerente responsável. Por exemplo, a empresa poderá possuir:
+Console PlayStation 5 – 10 unidades
+Jogo Horizon Forbidden West – 15 unidades
+Quando uma venda for realizada, o sistema deverá verificar se existe quantidade suficiente do produto em estoque, caso exista quantidade disponível, a venda poderá ser registrada e a quantidade do estoque deverá ser reduzida automaticamente. Caso não exista quantidade suficiente, o sistema deverá impedir a realização da venda, e informar que existe quantidade insuficiente.
+
+5. Realização de uma venda.
+    Imagine que um cliente chamado Carlos entre na loja interessado em comprar dois jogos e um console. O funcionário responsável pelo atendimento consulta o sistema e verifica a disponibilidade dos produtos.
+O sistema identifica:
+Cliente: Carlos
+Produto: PlayStation 5
+Quantidade: 1
+Tipo de venda: À vista
+Após a confirmação, o sistema registra a venda e reduz a quantidade disponível do PlayStation 5 e os itens comprado pelo Carlos no estoque. O novo registro de venda, será identificado pelo código do produto, o código do cliente, a quantidade adquirida e o tipo de venda. O tipo de venda poderá ser à vista ou prestação, de acordo com as regras estabelecidas pela empresa.
+
+6. Integração das informações.
+    O principal objetivo do sistema será fazer com que as informações estejam relacionadas, quando um funcionário consultar um determinado console, poderá identificar o fornecedor responsável pelo produto, seus valores de compra e venda e sua quantidade disponível no estoque. Da mesma forma, ao consultar uma venda, será possível identificar o produto comercializado, o cliente responsável pela compra, a quantidade adquirida e o tipo de pagamento, dessa maneira, o sistema deixará de tratar as informações como registros isolados e passará a trabalhar com informações relacionadas.
+
+7. Situação final esperada.
+    Com a implantação do Gerenciador de Console e Jogos, a empresa poderá substituir seus controles manuais por um sistema centralizado, proporcionando maior organização das informações, facilitar o cadastro e consulta de dados, controlar a quantidade dos produtos disponíveis e reduzir a possibilidade de erros durante as vendas.
+O objetivo final será permitir que a empresa tenha um controle mais eficiente de seus fornecedores, clientes, funcionários, consoles, jogos, estoque e vendas, utilizando um único sistema para administrar suas principais operações comerciais.
+
 
