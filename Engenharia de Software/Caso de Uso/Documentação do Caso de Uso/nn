@@ -1,1 +1,53 @@
 
+Nome do caso de uso: Gerenciar Fornecedor.
+Ator Principal: Comprador.
+Resumo: O sistema deverá cadastrar consultar, excluir e atualizar o fornecedor.
+Pré-condição: Comprador cadastrado no sistema para efetuar o cadastro do fornecedor.
+Pós-condição: Dados do fornecedor atualizado conforme a operação feita.
+
+Fluxo Principal.
+Ação Ator.	Ação Sistema.
+1° Comprador digita os dados válidos do fornecedor.	
+2° Sistema verifica se o nome do fornecedor já existe.
+3° Sistema cria automático o código de identificação do fornecedor.
+4° Sistema insere os dados relevantes do fornecedor na base de dados e libera á opção para cadastrar o endereço do fornecedor.
+5° Comprador digita os dados do endereço do fornecedor.	
+6° Sistema cadastra os dados do endereço do fornecedor.
+7° Sistema mostra mensagem: “Fornecedor cadastrado com êxito!”
+8° Sistema atualiza quadro de consulta dos fornecedores, com o nome do fornecedor pós cadastrado.
+
+Fluxo Alternativo 01 – Consultar Fornecedor.
+Ação do Ator.	Ação do Sistema.
+1° Comprador escolhe o fornecedor á ser consultado no quadro de consulta.	
+2° Sistema mostra os dados relevantes do fornecedor, só não habilita o código criado pelo sistema.
+3° Sistema libera a opção para consultar o endereço do fornecedor.
+4° Comprador escolhe a opção para consultar o endereço do fornecedor.	5° Sistema mostra os dados relevantes ao endereço do fornecedor.
+
+Fluxo Alternativo 02 – Excluir Fornecedor.
+Ação do Ator.	Ação do Sistema.
+01 – Comprador escolhe o fornecedor á ser excluído.	
+02 – Sistema mostra os dados do fornecedor á ser excluído e habilita á opção excluir, só não habilita o código criado pelo sistema.
+03 – Comprador seleciona excluir.	
+04 – Sistema exclui o fornecedor selecionado.
+05 – Comprador confirma á exclusão.	06 – Sistema envia a mensagem “Fornecedor e produtos pertencente ao fornecedor excluído com êxito.”
+07 – Sistema atualiza caixa de consulta.
+
+Fluxo alternativo 03 – Atualização do Fornecedor.
+Ação do Ator.	Ação do Sistema.
+01 – Comprador seleciona na caixa de consulta o fornecedor á ser atualizado.	
+02 – Sistema mostra e habilita os dados do fornecedor á ser atualizado, só não habilita o código criado pelo sistema.
+03 – Comprador atualiza o e/ou dados á ser atualizado.	
+04 – Sistema atualiza os dados atualizados pelo comprador.
+05 – Sistema mostra mensagem “Dados atualizado com êxito.”
+
+Restrições e Validações.
+
+Vali01  Sistema verifica se todos os campos estão corretamente preenchidos, se não estiver enviar mensagem e parar o cursor no campo incompleto antes de enviar os dados para cadastrar.
+Flu00R02  Sistema enviar mensagem “Nome fornecedor já existente no cadastro”, apagar todos os dados e desabilitar os campos e Button.
+Flu00R07  Sistema envia mensagem “Falha no cadastro” apaga todos os dados dos campo e desabilita os campos e o Button.
+Flu01R01  Sistema não enviar requisição ao banco.
+Flu01R02  Caso der algum erro na consulta, mostrar mensagem: “Falha na consulta.”
+Flu02R01  Caso der algum erro na consulta, mostrar mensagem: “Falha na consulta.”
+Flu02R05  Caso falha na transição do evento, mostrar mensagem: “Falha no erro de Exclusão, fornecedor não excluído.”
+Flu03R01  Caso der algum erro na consulta, mostrar mensagem: “Falha na consulta.”
+Flu03R05  Caso falha na transição do evento, mostrar mensagem: “Falha no erro de Exclusão, fornecedor não excluído.”
