@@ -21,7 +21,7 @@ O estoque será identificado por um código e estará relacionado ao código do 
 Imagine que um cliente entre na loja e compra dois jogos e um console. O funcionário responsável pelo atendimento consulta o sistema e verifica a disponibilidade dos produtos. O sistema identifica:
 Cliente: Carlos
 Vendedor: RE
-Qual o tipo de venda: Tipo de venda: À vista (0 parcelas) ou a prazo (informando o número de parcelas).
+Forma de Pagamento: À vista (0 parcelas) ou a prazo (informando o número de parcelas).
 
 Itens vendidos:
 Produto: PlayStation 5.
